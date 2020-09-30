@@ -1,0 +1,71 @@
+field: 31a22723-b618-4563-88b9-f635e59c6bcc
+fieldLayouts:
+  9c1d85ae-1039-4881-a9e9-a5da82107a94:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 32f963b1-9617-48e4-9848-2827acb95d9c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0b2950e8-fd53-4b06-97de-a22e4ce7956d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0b2950e8-fd53-4b06-97de-a22e4ce7956d:
+    contentColumnType: string
+    fieldGroup: null
+    handle: card
+    instructions: ''
+    name: Card
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '6'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:5f6e6227-0d66-4c11-b99c-68f24376a454'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  32f963b1-9617-48e4-9848-2827acb95d9c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleRooms
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: rooms
+name: Rooms
+sortOrder: 2

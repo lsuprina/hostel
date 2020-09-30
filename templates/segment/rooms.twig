@@ -1,0 +1,72 @@
+{% set module = module %}
+
+<div class="container">
+    <!--Section: Rooms-->
+    <section id="room">
+
+        <!--Secion heading-->
+        <h5 class="text-center dark-grey-text text-uppercase font-weight-bold spacing my-5 py-4 wow fadeIn"
+            data-wow-delay="0.2s">
+            <strong>{{module.titleRooms}} </strong>
+        </h5>
+
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            <!--Controls-->
+            <div class="controls-top">
+            <a class="mr-3" href="#multi-item-example" data-slide="prev">
+                <i class="fas fa-chevron-left info-text"></i>
+            </a>
+            <a class="ml-3" href="#multi-item-example" data-slide="next">
+                <i class="fas fa-chevron-right info-text"></i>
+            </a>
+            </div>
+            <!--/.Controls-->
+
+            {% set cards = module.card.all() %}
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <div class="carousel-item active">
+                    {% for card in cards|slice(0, 3) %}
+                        <div class="col-md-4 {{loop.first ? '' : 'clearfix d-none d-md-block'}}">
+                            <img class="img-fluid rounded" src="{{card.image.one().url}}"
+                                alt="Card image cap">
+                            <p class="text-uppercase font-weight-bold dark-grey-text spacing mt-3 mb-0">{{card.title}}</p>
+                            <a>
+                                <p class="info-text mt-1">
+                                <em>{{layout.checkDetailsLabel}}</em>
+                                </p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <!--/.Slide-->
+
+                <div class="carousel-item">
+                    {% for card in cards|slice(3) %}
+                        <div class="col-md-4 {{loop.first ? '' : 'clearfix d-none d-md-block'}}">
+                            <img class="img-fluid rounded" src="{{card.image.one().url}}"
+                                alt="Card image cap">
+                            <p class="text-uppercase font-weight-bold dark-grey-text spacing mt-3 mb-0">{{card.title}}</p>
+                            <a>
+                                <p class="info-text mt-1">
+                                <em>{{layout.checkDetailsLabel}}</em>
+                                </p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <!--/.Slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+
+    </section>
+    <!--/Section: Rooms-->
+</div>

@@ -1,0 +1,83 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto smooth-scroll">
+        <li class="nav-item">
+            <a class="nav-link" href="#{{header.navbarItem}}">{{header.navbarItem}}
+            <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about" data-offset="100">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#room" data-offset="100">Rooms</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#facilities" data-offset="100">Facilities</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#offers" data-offset="100">Top offers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#reservation" data-offset="100">Reservation</a>
+        </li>
+        </ul>
+        <!-- Social Icon  -->
+        <ul class="navbar-nav nav-flex-icons">
+        {% for entry in header.socialNetwork.all() %}
+            <li class="nav-item">
+                <a class="nav-link" href="{{entry.socialNetworkUrl}}" target="_blank">
+                <i class="{{entry.socialNetworkIcon}}"></i>
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    </div>
+</nav>
+
+
+<!-- Intro Section -->
+<div id="{{header.navbarItem}}" class="view jarallax" data-jarallax='{"speed": 0.2}' max-height="700px"
+    style="background-image: url('{{header.image.one().url}}');">
+    <div class="mask  rgba-black-slight">
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="row smooth-scroll">
+        <div class="col-md-12 text-center white-text">
+            <div class="wow fadeInDown" data-wow-delay="0.2s">
+            {% set heading = header.heading|split(' ') %}
+            <h1 class="white-text display-4 font-weight-bold mt-5 mt-xl-2">
+                <em>{{heading[0]}} {{heading[1]}} {{heading[2]}}
+                <strong>{{heading[3]}}</strong>
+                </em>
+            </h1>
+
+            <!--Rating-->
+            <ul class="rating mt-3">
+            {% for i in 1.. header.rating %}
+                <li>
+                <i class="fas fa-star"></i>
+                </li>
+            {% endfor %}
+            </ul>
+
+            <h4 class="text-uppercase white-text mb-5 mt-3 font-weight-bold spacing">{{header.subheading}}</h4>
+
+            <a href="#rooms" class="btn btn-white dark-grey-text font-weight-bold btn-rounded spacing"
+                data-offset="100">
+                <strong>{{header.reservationLabel}}</strong>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- /Intro Section -->

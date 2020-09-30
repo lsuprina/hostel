@@ -1,0 +1,27 @@
+fieldLayouts:
+  abbec0ae-98c3-4a34-aefc-6658f16673b8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 49f68a2b-8764-4058-ae16-696ba9d2b109
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b2aa18e1-1afb-4dbd-992d-65cefdfe1dec
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Layout
+        sortOrder: 1
+handle: layout
+name: Layout

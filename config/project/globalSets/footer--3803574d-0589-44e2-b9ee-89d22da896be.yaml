@@ -1,0 +1,133 @@
+fieldLayouts:
+  60a549a1-8708-4786-96c2-43939c502746:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 07a09b00-2789-457b-80fe-94e13886a912
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b36dbfa2-8ecb-4969-a71d-f946c703e5e4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 21a8bea5-e4c6-4036-9394-7ae6d0d92f08
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: df8d9499-ad0f-45c0-8d1f-0979d9a19222
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Basic information'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 80fa799d-e200-4e71-9560-fb1122426434
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ec662d5e-55e2-43d3-9155-c27dff5485da
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Social networks'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 6dd5923e-ba5e-43d9-9bc4-23a02303ab75
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aaa262a7-0bb2-4035-b984-07227656cd9c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Copyright
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 31e62795-8893-46fc-a68b-b7fc396fe6b8
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a92a4e8c-629c-47a8-ab14-f0bc5d69a6c4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Left menu'
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 138dd175-7889-49d9-bb9c-9f9e7d012baf
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e9acf0fe-476c-4b84-b33e-d43dd2570bab
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Right menu'
+        sortOrder: 5
+handle: footer
+name: Footer

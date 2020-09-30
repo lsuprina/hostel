@@ -1,0 +1,109 @@
+field: 31a22723-b618-4563-88b9-f635e59c6bcc
+fieldLayouts:
+  bd2e6186-8e62-49c6-a5af-fb4e05f0230c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 60f46aeb-b653-4d4e-b461-ef0c6b448210
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0aef01ef-5659-4694-b31b-f37fa27b903c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1e9ffe86-6483-42aa-8b2c-7de2ee4d1a9e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0aef01ef-5659-4694-b31b-f37fa27b903c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: activities
+    instructions: ''
+    name: Activities
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  1e9ffe86-6483-42aa-8b2c-7de2ee4d1a9e:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: 'Background image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7cb34f59-d1f7-4250-ac34-c1698263af23'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7cb34f59-d1f7-4250-ac34-c1698263af23'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:7cb34f59-d1f7-4250-ac34-c1698263af23'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  60f46aeb-b653-4d4e-b461-ef0c6b448210:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleStreak
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: streak
+name: Streak
+sortOrder: 4

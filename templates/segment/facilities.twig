@@ -1,0 +1,43 @@
+{% set module = module %}
+
+<!--Second container-->
+<div class="container-fluid light-grey-background">
+    <div class="container py-4">
+
+    <!--Section: Facilities-->
+    <section id="facilities" class="mt-3 mb-3 pb-3">
+
+        <h5 class="text-center dark-grey-text text-uppercase font-weight-bold spacing my-5 pt-2 pb-4 wow fadeIn"
+        data-wow-delay="0.2s">
+        <strong>{{module.titleFacilities}}</strong>
+        </h5>
+
+        <!-- First row -->
+        <div class="row  wow fadeIn" data-wow-delay="0.4s">
+            {% set cards = module.card.all() %}
+            {% for card in cards %}
+                <!-- First column -->
+                <div class="col-md-4 mb-4 text-center">
+
+                    <!--Panel-->
+                    <div class="card card-body rgba-white-light hoverable">
+                        <i class="{{card.icon}} fa-2x mb-4 mt-3 dark-grey-text" aria-hidden="true"></i>
+                        <p class="font-weight-bold font-weight-bold dark-grey-text text-uppercase spacing">
+                            <strong>{{card.title}}</strong></p>
+                        <div class="dark-grey-text font-small">{{card.description}}</div>
+                    </div>
+                    <!--/.Panel-->
+
+                </div>
+                <!-- /First column -->
+            {% endfor %}
+
+        </div>
+        <!-- /.First row -->
+
+    </section>
+    <!--/Section: Facilities-->
+
+    </div>
+</div>
+<!--Second container-->

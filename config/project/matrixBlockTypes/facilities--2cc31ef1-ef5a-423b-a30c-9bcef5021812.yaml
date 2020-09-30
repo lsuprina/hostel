@@ -1,0 +1,71 @@
+field: 31a22723-b618-4563-88b9-f635e59c6bcc
+fieldLayouts:
+  2c78bc85-b029-4d51-b9fd-dfeadb8a0a78:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: cc7396f0-cd39-449c-8f27-05711dedd94a
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ca76ac44-fdf8-4c1e-86a7-159473b4c0e5
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  ca76ac44-fdf8-4c1e-86a7-159473b4c0e5:
+    contentColumnType: string
+    fieldGroup: null
+    handle: card
+    instructions: ''
+    name: Card
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '3'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:752ed31a-2a4f-46c1-8e34-563e66675306'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  cc7396f0-cd39-449c-8f27-05711dedd94a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleFacilities
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: facilities
+name: Facilities
+sortOrder: 3

@@ -1,0 +1,11 @@
+{% extends "layout" %}
+
+{% block main %}
+    {% set entry = craft.entries().section('homepage').one() %}
+
+    {% if entry['homepage'] is defined %}
+        {% for module in entry.homepage.all() %}
+            {% include "segment/" ~ module.type ~ '.twig' with {'block' : module} %}
+        {% endfor %}
+    {% endif %}
+{% endblock %}

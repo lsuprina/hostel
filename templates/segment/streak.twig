@@ -1,0 +1,24 @@
+{% set module = module %}
+
+<div class="streak streak-md streak-photo"
+    style="background-image:url('{{module.image.one().url}}')">
+    <div class="flex-center white-text rgba-white-slight">
+    <ul class="list-unstyled mb-0">
+        <li>
+        <h1 class="h1-responsive font-weight-bold mb-4 spacing">
+            {% set title = module.titleStreak|split(' ',2) %}
+            <em>{{title[0]}}
+            <strong> {{title[1]}}</strong>
+            </em>
+        </h1>
+        </li>
+        {% set activity = module.activities|split(',', 5) %}
+        <li class="mb-5">
+        <h6 class="text-center font-italic mb-0">{{activity[0]}} | {{activity[1]}} | {{activity[2]}}</h6>
+        </li>
+        <button class="btn btn-white dark-grey-text font-weight-bold spacing btn-rounded">
+        <strong>{{layout.bookingLabel}}</strong>
+        </button>
+    </ul>
+    </div>
+</div>

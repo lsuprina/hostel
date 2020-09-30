@@ -1,0 +1,19 @@
+contentColumnType: smallint(1)
+fieldGroup: d53fc912-8b9e-46c8-aaa6-051741f3bc2d
+handle: rating
+instructions: ''
+name: Rating
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: '5'
+  min: '0'
+  prefix: ''
+  previewCurrency: ''
+  previewFormat: decimal
+  size: null
+  suffix: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

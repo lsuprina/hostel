@@ -1,0 +1,76 @@
+fieldLayouts:
+  c9ba3111-c124-41eb-8e9f-5e63376565d3:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 28e4ba32-7b23-41b2-982d-2698bc77403a
+            instructions: ''
+            label: 'Background image'
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 07a09b00-2789-457b-80fe-94e13886a912
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 523b8259-1c2f-49bf-83b6-276b26a92287
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d5ee639a-8905-45bb-ad36-3b52905ccad8
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f1270322-07b1-4d9c-b075-153c9e071284
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 47632a56-54e6-46d6-ae1e-65751d09ea4a
+            instructions: ''
+            label: 'Navigation bar label'
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Introduction
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: ec662d5e-55e2-43d3-9155-c27dff5485da
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Social networks'
+        sortOrder: 2
+handle: header
+name: Header

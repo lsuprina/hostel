@@ -1,0 +1,48 @@
+    {% set module = module %}
+    
+    <!--First container-->
+    <div class="container">
+      <!--Section: About-->
+      <section id="about" class="mt-5">
+        <!--Secion heading-->
+        <h5 class="text-center dark-grey-text text-uppercase font-weight-bold spacing my-5 py-4 wow fadeIn"
+          data-wow-delay="0.2s">
+          <strong>{{module.heading}}</strong>
+        </h5>
+
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-5">
+            <img src="{{module.image.one().url}}" class="img-fluid z-depth-1 rounded"
+              alt="sample image">
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 ml-lg-5 justify-content-left grey-text">
+            <hr class="line">
+            <h3 class="text-left dark-grey-text text-center font-weight-bold pb-4 wow fadeIn" data-wow-delay="0.2s">
+              <em>
+                <strong>{{module.subheading}}</strong>
+              </em>
+            </h3>
+            {{module.text}}
+            <h5 class="text-right dark-grey-text font-weight-bold mt-5 wow fadeIn" data-wow-delay="0.2s">
+              <em>
+                <strong>{{module.author}}</strong>
+              </em>
+            </h5>
+            <p class="text-right grey-text wow fadeIn" data-wow-delay="0.2s">
+              <em>{{module.authorsTitle}}</em>
+            </p>
+
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!--/Section: About-->
+      <hr class="wow fadeIn mt-5" data-wow-delay="0.4s">
+    </div>
+    <!--/First container-->

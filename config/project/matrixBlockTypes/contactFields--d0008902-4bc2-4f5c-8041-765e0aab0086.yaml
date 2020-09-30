@@ -1,0 +1,106 @@
+field: df8d9499-ad0f-45c0-8d1f-0979d9a19222
+fieldLayouts:
+  ec0411e2-3ddc-44a7-8574-a26f3296d696:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: cc91f8a6-4d8d-4fe4-9d13-be2e4f52c1c9
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a5100983-e308-4a15-b32c-5ee1aec905ce
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  a5100983-e308-4a15-b32c-5ee1aec905ce:
+    contentColumnType: text
+    fieldGroup: null
+    handle: contactValue
+    instructions: ''
+    name: 'Contact value'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cc91f8a6-4d8d-4fe4-9d13-be2e4f52c1c9:
+    contentColumnType: string
+    fieldGroup: null
+    handle: contactIcon
+    instructions: ''
+    name: 'Contact type'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Address
+            -
+              - value
+              - 'fas fa-home'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Email
+            -
+              - value
+              - 'fas fa-envelope'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Phone
+            -
+              - value
+              - 'fas fa-phone'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Fax
+            -
+              - value
+              - 'fas fa-print'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: contactFields
+name: 'Contact fields'
+sortOrder: 1

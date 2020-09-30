@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: d53fc912-8b9e-46c8-aaa6-051741f3bc2d
+handle: footerRightMenu
+instructions: ''
+name: 'Footer right menu'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_footerrightmenu}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

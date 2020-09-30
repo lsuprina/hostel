@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 29f996c1-1c5b-468e-b06f-13c41110227b
+handle: socialNetworkLabel
+instructions: ''
+name: 'Social network label'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
