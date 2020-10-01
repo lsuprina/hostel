@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 82828b93-6caf-4494-b888-29874f6867db
+handle: launchesIcon
+instructions: ''
+name: 'Launches icon'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

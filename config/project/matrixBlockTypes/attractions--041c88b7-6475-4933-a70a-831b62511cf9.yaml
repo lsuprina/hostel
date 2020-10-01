@@ -1,0 +1,304 @@
+field: 31a22723-b618-4563-88b9-f635e59c6bcc
+fieldLayouts:
+  412b6966-4c79-4f58-aacf-4b9c9825ac28:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 68dfabf7-6a79-4c2c-874a-5c4ffadbdb8e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8a63db18-d950-4150-bbd1-28745ea725c0
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d010ea84-1073-4dce-a4dd-a07ddb8ef6af
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a1d2fef0-fc80-442d-a8d6-cf9a01737218
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5cb19bf8-b97e-42ed-9f88-4d58db9dc18c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d72b6759-5bbc-463d-ade3-2e4d089b7efa
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5130c6dc-5dc2-48f4-ab87-e890bfd92741
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 60a5c245-a528-49f6-a6c2-b0605798361d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ad687644-69d1-403c-83c0-ca60715d3f7d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5130c6dc-5dc2-48f4-ab87-e890bfd92741:
+    contentColumnType: text
+    fieldGroup: null
+    handle: rightHeading
+    instructions: ''
+    name: 'Right paragraph heading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5cb19bf8-b97e-42ed-9f88-4d58db9dc18c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: leftParagraphIcon
+    instructions: ''
+    name: 'Left paragraph icon'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  60a5c245-a528-49f6-a6c2-b0605798361d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: rightParagraphIcon
+    instructions: ''
+    name: 'Right paragraph icon'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  68dfabf7-6a79-4c2c-874a-5c4ffadbdb8e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleAttractions
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8a63db18-d950-4150-bbd1-28745ea725c0:
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  a1d2fef0-fc80-442d-a8d6-cf9a01737218:
+    contentColumnType: text
+    fieldGroup: null
+    handle: leftHeading
+    instructions: ''
+    name: 'Left paragraph heading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ad687644-69d1-403c-83c0-ca60715d3f7d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: rightParagraph
+    instructions: ''
+    name: 'Right paragraph'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  d010ea84-1073-4dce-a4dd-a07ddb8ef6af:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7cb34f59-d1f7-4250-ac34-c1698263af23'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7cb34f59-d1f7-4250-ac34-c1698263af23'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:7cb34f59-d1f7-4250-ac34-c1698263af23'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d72b6759-5bbc-463d-ade3-2e4d089b7efa:
+    contentColumnType: text
+    fieldGroup: null
+    handle: leftParagraph
+    instructions: ''
+    name: 'Left paragraph'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: attractions
+name: Attractions
+sortOrder: 6

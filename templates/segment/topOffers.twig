@@ -1,0 +1,98 @@
+{% set module = module %}
+
+<div class="container">
+
+    <!--Section: Offers-->
+    <section id="offers" class="pt-2 mt-3 pb-3">
+
+    <h5 class="text-center dark-grey-text text-uppercase font-weight-bold spacing my-5 pt-2 pb-4 wow fadeIn"
+        data-wow-delay="0.2s">
+        <strong>{{module.titleTopOffers}}</strong>
+    </h5>
+
+    <!-- Grid row -->
+    <div class="row">
+
+        {% set cards = module.card.all() %}
+        
+        {% for card in cards %}
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-4">
+             <!--Card-->
+            <div class="card card-personal mb-4">
+        
+                <!--Card image-->
+                <div class="view overlay">
+                <img class="card-img-top" src="{{card.image.one().url}}"
+                    alt="Card image cap">
+                <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+                </div>
+                <!--Card image-->
+
+                <!--Card content-->
+                <div class="card-body">
+                <!--Title-->
+                <a>
+                    <h5 class="font-weight-bold text-uppercase">
+                    <strong>{{card.title}}</strong>
+                    </h5>
+                </a>
+                <a>
+                    <span class="badge badge-info py-2 px-2">{{card.price|currency('')}}</span>
+                </a>
+
+                <!--Text-->
+                <div class="grey-text mt-2">{{card.description}}</div>
+                    <!--Grid row-->
+                    <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <p class="dark-grey-text">
+                        <i class="{{card.bedsIcon}} dark-grey-text" aria-hidden="true"></i> {{card.numberOfBeds}} {{card.numberOfBeds == 1 ? 'bed' : 'beds'}}
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <p class="dark-grey-text">
+                        <i class="{{card.launchesIcon}} dark-grey-text" aria-hidden="true"></i> {{card.launchesLabel}}</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <p class="dark-grey-text">
+                        <i class="{{card.icon}} dark-grey-text" aria-hidden="true"></i> {{card.wiFiLabel}}</p>
+                    </div>
+                    <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+                </p>
+                <hr>
+                <!--Grid column-->
+                <div class="col-12 text-center">
+                    <button class="btn btn-info btn-sm font-weight-bold btn-rounded">
+                    <strong>{{layout.bookingLabel}}</strong>
+                    </button>
+                </div>
+                <!--Grid column-->
+
+                </div>
+                <!--Card content-->
+
+            </div>
+            <!--Card-->
+        </div>
+        <!-- Grid column -->
+        {% endfor %}
+    </div>
+    <!-- Grid row -->
+
+    </section>
+    <!--Section: Offers-->
+</div>

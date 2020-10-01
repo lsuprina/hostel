@@ -1,5 +1,5 @@
 fieldLayouts:
-  ce3b670d-0630-4223-b3c0-fa30207ddb5d:
+  5209354e-9d37-41fa-a429-cb3666638424:
     tabs:
       -
         elements:
@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6ae133b9-771e-42ba-bad1-06b7901b0b1f
+            fieldUid: 3c324bc9-f0ff-447e-a4cd-05322f60be27
             instructions: null
             label: null
             required: false
@@ -36,7 +36,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 31a22723-b618-4563-88b9-f635e59c6bcc
+            fieldUid: edafd73b-0add-4589-bc57-5991eeafb69e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 55df6567-5fc1-4485-9479-f3d05e3844e1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7d07fe05-9b6d-42e2-9015-04449b900e4b
             instructions: null
             label: null
             required: false
@@ -46,10 +64,10 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: homepage
+handle: reservation
 hasTitleField: false
-name: Homepage
-section: 440df6bc-5a9d-4a0c-b03f-4967afef69bf
+name: Reservation
+section: f3c86bc4-6402-4f39-9cc1-9762ddedaf0f
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

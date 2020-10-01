@@ -1,0 +1,107 @@
+{% set reservation = craft.entries().section('reservation').one() %}
+
+<!--Third container-->
+<div class="container">
+
+    <hr class="wow fadeIn mt-5" data-wow-delay="0.4s">
+
+    <!--Section: Reservation-->
+    <section id="reservation" class="mb-5 pt-3 pb-5 wow fadeIn" data-wow-delay="0.2s">
+
+    <h5 class="text-center dark-grey-text text-uppercase font-weight-bold spacing my-5 py-4 wow fadeIn"
+        data-wow-delay="0.2s">
+        <strong>Reservation</strong>
+    </h5>
+
+    {% macro errorList(errors) %}
+    {% if errors %}
+        <ul class="errors">
+        {% for error in errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endmacro %}
+
+    {% set entry = entry ?? create('craft\\elements\\Entry') %}
+
+    <form method="post" accept-charset="UTF-8">
+        {{ csrfInput() }}
+        {{ actionInput('entries/save-entry') }}
+        {{ redirectInput('..') }}
+        {{ hiddenInput('sectionId', '5') }}
+        {{ hiddenInput('enabled', '1') }}
+        {{ hiddenInput('fields[reservation][]', reservation.id) }}
+
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12">
+
+            <div class="input-group md-form form-sm form-3 pl-0">
+                <div class="input-group-prepend w-100">
+                <span class="input-group-text white black-text" id="basic-addon8">1</span>
+                <input type="text" class="form-control mt-0 blue-border rgba-white-strong" placeholder="Name"
+                    aria-describedby="basic-addon8" name="fields[nameClient]">
+                </div>
+            </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6">
+
+            <div class="input-group md-form form-sm form-3 pl-0">
+                <div class="input-group-prepend w-100">
+                <span class="input-group-text white black-text" id="basic-addon9">2</span>
+                <input type="email" class="form-control mt-0 blue-border rgba-white-strong" placeholder="Email"
+                    aria-describedby="basic-addon9" name="fields[emailClient]">
+                </div>
+            </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6">
+
+            <div class="input-group md-form form-sm form-3 pl-0">
+                <div class="input-group-prepend w-100">
+                <span class="input-group-text white black-text" id="basic-addon10">3</span>
+                <input type="url" class="form-control mt-0 blue-border rgba-white-strong" placeholder="Website"
+                    aria-describedby="basic-addon10" name="fields[website]">
+                </div>
+            </div>
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row mt-4">
+
+            <!--Grid column-->
+            <div class="col-lg-12 col-md-12">
+
+                <div class="form-group basic-textarea">
+                    <label for="exampleFormControlTextarea2" class="font-small grey-text">Your message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" name="fields[messageClient]"></textarea>
+                </div>
+                <input type="submit" class="btn btn-info btn-sm font-weight-bold btn-rounded waves-effect waves-light ml-0" value="{{layout.bookingLabel}}">
+                
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+        </form>
+
+    </section>
+    <!--/Section: Reservation-->
+
+</div>
+<!--/Third container-->

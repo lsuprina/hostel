@@ -8,4 +8,5 @@
             {% include "segment/" ~ module.type ~ '.twig' with {'block' : module} %}
         {% endfor %}
     {% endif %}
+    {% include "segment/reservation.twig" %}
 {% endblock %}
